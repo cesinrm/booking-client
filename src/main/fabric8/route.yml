@@ -1,0 +1,9 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: booking-client-lra-thorntail
+spec:
+  path: /book
+  to:
+    kind: Service
+    name: booking-client-lra-thorntail
